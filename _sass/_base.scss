@@ -153,6 +153,9 @@ pre {
 .text-center {
     text-align: center;
 }
+.text-left {
+    text-align: left;
+}
 /**
  * Wrapper
  */
@@ -222,6 +225,7 @@ pre {
         background-color: lighten($brand-color, 5%);
         border-bottom: 4px solid darken($brand-color, 5%);
         text-decoration: none;
+        cursor: pointer;
     }
     &:visited {
         color: $text-color-light;;

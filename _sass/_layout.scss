@@ -35,13 +35,17 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $grey-color;
         line-height: $base-line-height;
-
+        font-size: .8rem;
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
         }
+    }
+
+    .trigger.selected {
+        border-bottom: 2px solid $brand-color;
     }
 
     @include media-query($on-palm) {
@@ -168,14 +172,22 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
+.page-content {    
+    padding-bottom: $spacing-unit;
+}
+
+.main-content {
+    padding: 40px 0;
 }
 
 .page-heading {
-    text-transform: capitalize;
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 0;
+    + p {
+        text-transform: uppercase;
+    }
 }
 
 .post-list {
@@ -197,16 +209,24 @@
     font-size: 24px;
 }
 
-.home {
+.hero {
     background: url(/images/rounds.png);
     background-position: bottom center;
     background-size: cover;
     min-height: 500px;
-    padding-top: 100px;
+    padding: 100px 0;
+    &.secondary {
+        background: linear-gradient(rgba(80,84,32,.95), rgba(80,84,32,.95)), url(/images/rounds.png);
+        background-position: bottom center;
+        background-size: cover;
+        color: white;
+        min-height: initial;        
+    }
 }
 
 .callouts {
     @extend %clearfix;
+    padding: 40px 0;
     .callout {
         color: $brand-color;
         padding: 15px;
@@ -284,4 +304,56 @@
             font-size: 18px;
         }
     }
+}
+
+
+
+// contact us
+
+.contact-us-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+
+    form {
+        padding-top: 20px;
+        > * {
+            margin-bottom: 10px;
+        }
+    }
+
+    .split {
+        padding-bottom: 10px;
+
+        @include min-width-query($on-phone) {
+            float: left;
+            width: 50%;
+            &:nth-child(odd) {
+                padding-right: 10px;
+            }
+            &:nth-child(even) {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    input:not([type="submit"]), 
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $grey-color;
+        border-radius: 2px;
+    }
+    textarea {
+        min-height: 150px;
+    }
+    [type="submit"] {
+        width: 100%;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
 }

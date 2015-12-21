@@ -45,6 +45,11 @@ $on-laptop:        800px;
         @content;
     }
 }
+@mixin min-width-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
 
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
