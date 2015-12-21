@@ -190,7 +190,9 @@ pre {
     }
 }
 
-
+.cf {
+    @extend %clearfix;
+}
 
 /**
  * Icons
