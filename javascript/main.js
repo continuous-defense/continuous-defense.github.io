@@ -4,6 +4,6 @@ function hideContent() {
 }
 
 
-if (location.search !== '?demo=true') {
+if (location.search !== '?demo=true' && false) {
 	hideContent();
 }
