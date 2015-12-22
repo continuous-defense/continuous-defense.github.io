@@ -402,3 +402,17 @@
         }
     }
 }
+
+
+.blog-posts {
+    margin: 10px 0;
+    list-style: none;    
+    text-align: left;
+    &-item {
+        border-bottom: 1px solid $grey-color-light;
+        padding: 20px 10px;
+        &_title a {
+            color: $brand-color;
+        }
+    }
+}

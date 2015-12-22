@@ -1,0 +1,28 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+heading: Our two cents are free
+subheading: semper armatus
+---
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<ul class="blog-posts">
+	
+	{% for post in site.posts %}
+
+		<li class="blog-posts-item">
+	        <h2 class="blog-posts-item_title">
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h2>			
+			<span class="blog-posts-item_date"> {{ post.date | date: "%b %-d, %Y"  }} </span>
+			<span class="blog-posts-item_author"> {{ post.author }} </span>
+			<p class="blog-posts-item_preview">
+				{{ post.excerpt }}
+			</p>
+		</li>
+
+	{% endfor%}
+
+</ul>
