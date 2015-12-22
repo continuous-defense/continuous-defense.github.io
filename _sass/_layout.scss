@@ -357,3 +357,48 @@
     }
 
 }
+
+
+
+
+.card-wrapper {
+    @include min-width-query($on-palm) {
+        width: 50%;
+    }
+    @include min-width-query($on-laptop) {
+        width: 33%
+    }
+    float: left;
+    padding: 10px;
+    .card {
+        border-radius: 3px;
+        border: 1px solid $grey-color-light;
+        display: inline-block;
+        margin: 10px;
+        box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.4);    
+        &-header {
+            padding: 20px 0;
+            background-color: $brand-color;
+            h3 {
+                color: white;
+                margin: 0;
+            }
+        }
+        &-body {
+            padding: 10px;
+        }
+        &-footer {
+            @extend %clearfix;        
+            margin: 5px 10px;
+            border-top: 1px solid $grey-color-light;
+            .half {
+                padding: 5px 0;
+                float: left;
+                width: 50%;
+                &:first-child {
+                    border-right: 1px solid $grey-color-light;
+                }
+            }
+        }
+    }
+}

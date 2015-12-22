@@ -19,3 +19,10 @@ github_username:  continuous-defense
 
 # Build settings
 markdown: kramdown
+
+include: ["_pages"]
+
+collections:
+  courses:
+    output: true
+    permalink: /courses/:title/

@@ -1,0 +1,26 @@
+---
+layout: page
+title: Courses
+permalink: /courses/
+heading: Full suite of classes, instruction, and traning
+subheading: semper armatus
+---
+
+{% for course in site.courses %}
+
+	<div class="card-wrapper">
+		<div class="card">
+			<header class="card-header">
+				<h3>{{ course.title }}</h3>
+			</header>
+			<div class="card-body">
+				<p>{{ course.short_description }}</p>
+			</div>
+			<footer class="card-footer">
+				<div class="half"><a href="{{ course.url }}" title="">Learn More</a></div>
+				<div class="half"><a href="/schedule" title="">Schedule</a></div>			
+			</footer>
+		</div>
+	</div>
+
+{% endfor%}

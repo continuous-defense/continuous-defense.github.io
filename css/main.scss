@@ -61,19 +61,19 @@ $on-laptop:        800px;
 ;
 
 
-.under-construction:after {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;	
-	background-color: rgba(0,0,0, .8);
-	padding-top: 300px;
-	color: white;
-	content: 'SITE CURRENTLY UNDER CONSTRUCTION';
-	text-align: center;
-	font-size: 26px;
-	font-weight: bold;
-	font-family: $base-font-family;
-	cursor: not-allowed;
-}
+// .under-construction:after {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	bottom: 0;
+// 	right: 0;	
+// 	background-color: rgba(0,0,0, .8);
+// 	padding-top: 300px;
+// 	color: white;
+// 	content: 'SITE CURRENTLY UNDER CONSTRUCTION';
+// 	text-align: center;
+// 	font-size: 26px;
+// 	font-weight: bold;
+// 	font-family: $base-font-family;
+// 	cursor: not-allowed;
+// }
