@@ -1,0 +1,6 @@
+project_name: continuous defense
+editable:
+  - name: posts
+    path: _posts
+  - name: courses
+  - path: _courses
