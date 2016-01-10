@@ -1,13 +1,11 @@
 {
   "project_name": "continuous_defense",
-  "editable_directories": [
-    {
-      "name": "posts",
+  "editable_directories": {
+    "posts": {
       "path": "/_posts"
     },
-    {
-      "name": "courses",
+    "courses": {
       "path": "/_courses"
     }
-  ]
+  }
 }
