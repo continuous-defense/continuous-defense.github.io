@@ -7,7 +7,7 @@
     },
     {
       "name": "courses",
-      "path": "/_courses",
+      "path": "/_courses"
     }
   ]
 }
